@@ -25,7 +25,7 @@ SunVector::SunVector(size_t n)
   if (!nv) {
     char msg[256];
     sprintf(msg, "Sundials error: unable to allocate serial vector of "
-      "length %d", n);
+      "length %zu", n);
     throw PDE1dException("pde1d:sundials_mem_alloc", msg);
   }
 }

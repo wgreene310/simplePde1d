@@ -679,11 +679,11 @@ void PDE1dImpl::printStats()
     &hlast, &hcur, &tcur);
   long nniters, nncfails;
   flag = IDAGetNonlinSolvStats(ida, &nniters, &nncfails);
-  printf("Number of internal time steps = %d\n", nsteps);
-  printf("Number of residual function calls = %d\n", nrevals);
-  printf("Number of Jacobian calculations = %d\n", nlinsetups);
-  printf("Number of solution accuracy test failures = %d\n", netfails);
+  printf("Number of internal time steps = %ld\n", nsteps);
+  printf("Number of residual function calls = %ld\n", nrevals);
+  printf("Number of Jacobian calculations = %ld\n", nlinsetups);
+  printf("Number of solution accuracy test failures = %ld\n", netfails);
   printf("Last internal time step size = %12.3e\n", hlast);
-  printf("Number of nonlinear iterations = %d\n", nniters);
-  printf("Number of nonlinear convergence failures = %d\n", nncfails);
+  printf("Number of nonlinear iterations = %ld\n", nniters);
+  printf("Number of nonlinear convergence failures = %ld\n", nncfails);
 }
