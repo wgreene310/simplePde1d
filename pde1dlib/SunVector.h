@@ -31,6 +31,9 @@ public:
   N_Vector operator()() {
     return nv;
   }
+  N_Vector getNV() {
+    return nv;
+  }
 private:
   N_Vector nv;
 };
