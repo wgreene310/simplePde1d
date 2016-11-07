@@ -122,7 +122,7 @@ void PDE1dMexInt::evalPDE(RealVector x, double t,
 {
   // Evaluate pde coefficients at all x-locations
   // [c,f,s] = heatpde(x,t,u,DuDx)
-  setVector(x, mxX1);
+  setMatrix(x.transpose(), mxX1);
   setScalar(t, mxT);
   setMatrix(u, mxVec1);
   setMatrix(DuDx, mxVec2);
